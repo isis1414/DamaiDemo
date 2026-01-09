@@ -1,15 +1,18 @@
 package org.example.pojo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.example.common.enums.BaseCode;
 
-import java.io.PrintWriter;
 import java.io.Serializable;
 @Data
+@AllArgsConstructor // 生成全参构造器
 public class ApiResponse<T> implements Serializable {
     private Integer code;
     private String message;
     private T data;
-    private ApiResponse(){}
+    public ApiResponse(){}
     private static <T> ApiResponse<T> error(Integer code, String message){
         ApiResponse<T> apiResponse = new ApiResponse<T>();
         apiResponse.code = code;

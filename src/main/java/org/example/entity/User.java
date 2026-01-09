@@ -1,11 +1,13 @@
 package org.example.entity;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.io.Serial;
 import java.io.Serializable;
 
 @Data
+@TableName("d_user")
 public class User extends BaseTableData implements Serializable {
 
     @Serial

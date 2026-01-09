@@ -6,4 +6,5 @@ import org.apache.ibatis.annotations.Mapper;
 import org.example.entity.User;
 @Mapper
 public  interface UserMapper extends BaseMapper<User> {
+
 }

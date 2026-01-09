@@ -1,4 +1,4 @@
-package org.example.pojo;
+package org.example.common.enums;
 
 public enum BaseCode {
     /**

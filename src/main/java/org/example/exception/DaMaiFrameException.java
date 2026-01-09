@@ -1,8 +1,7 @@
 package org.example.exception;
 
-import lombok.Data;
 import org.example.pojo.ApiResponse;
-import org.example.pojo.BaseCode;
+import org.example.common.enums.BaseCode;
 
 public class DaMaiFrameException extends BaseException{
         private Integer code;
